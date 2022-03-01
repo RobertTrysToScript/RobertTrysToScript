@@ -1,0 +1,186 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local on1 = Instance.new("TextButton")
+local off1 = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local on2 = Instance.new("TextButton")
+local off2 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local shotgunandak47 = Instance.new("TextButton")
+local Prisonguns = Instance.new("TextButton")
+local Car = Instance.new("TextButton")
+local Prison = Instance.new("TextButton")
+local TextLabel_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(120, 110, 108)
+Frame.Position = UDim2.new(0, 0, 0.813496888, 0)
+Frame.Size = UDim2.new(0, 352, 0, 162)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextLabel.Position = UDim2.new(0.730113626, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 95, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "PrisonLife"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextButton.Position = UDim2.new(0.28125, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 79, 0, 32)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Speed"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+on1.Name = "on1"
+on1.Parent = Frame
+on1.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+on1.Position = UDim2.new(0.28125, 0, 0.197530866, 0)
+on1.Size = UDim2.new(0, 40, 0, 18)
+on1.Font = Enum.Font.SourceSans
+on1.Text = "on"
+on1.TextColor3 = Color3.fromRGB(0, 0, 0)
+on1.TextSize = 14.000
+on1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+off1.Name = "off1"
+off1.Parent = Frame
+off1.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+off1.Position = UDim2.new(0.394886374, 0, 0.197530866, 0)
+off1.Size = UDim2.new(0, 39, 0, 18)
+off1.Font = Enum.Font.SourceSans
+off1.Text = "off"
+off1.TextColor3 = Color3.fromRGB(0, 0, 0)
+off1.TextSize = 14.000
+off1.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+TextButton_2.Parent = Frame
+TextButton_2.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextButton_2.Position = UDim2.new(0.505681813, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 79, 0, 32)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "JumpPower"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
+
+on2.Name = "on2"
+on2.Parent = Frame
+on2.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+on2.Position = UDim2.new(0.505681813, 0, 0.197530866, 0)
+on2.Size = UDim2.new(0, 40, 0, 18)
+on2.Font = Enum.Font.SourceSans
+on2.Text = "on"
+on2.TextColor3 = Color3.fromRGB(0, 0, 0)
+on2.TextSize = 14.000
+on2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 250
+end)
+
+off2.Name = "off2"
+off2.Parent = Frame
+off2.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+off2.Position = UDim2.new(0.619318187, 0, 0.197530866, 0)
+off2.Size = UDim2.new(0, 39, 0, 18)
+off2.Font = Enum.Font.SourceSans
+off2.Text = "off"
+off2.TextColor3 = Color3.fromRGB(0, 0, 0)
+off2.TextSize = 14.000
+off2.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextLabel_2.Position = UDim2.new(-1.08372085e-08, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 99, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Roberts GUI"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextLabel_3.Position = UDim2.new(-1.08372085e-08, 0, 0.30864197, 0)
+TextLabel_3.Size = UDim2.new(0, 99, 0, 16)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Guns"
+TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.TextSize = 14.000
+
+shotgunandak47.Name = "shotgun and ak47"
+shotgunandak47.Parent = Frame
+shotgunandak47.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+shotgunandak47.Position = UDim2.new(0.28125, 0, 0.30864197, 0)
+shotgunandak47.Size = UDim2.new(0, 79, 0, 16)
+shotgunandak47.Font = Enum.Font.SourceSans
+shotgunandak47.Text = "Ak47 & Shotgun"
+shotgunandak47.TextColor3 = Color3.fromRGB(0, 0, 0)
+shotgunandak47.TextSize = 14.000
+shotgunandak47.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-943.112244, 94.1287613, 2056.17529, 0.999846756, -1.60446358e-08, -0.0175066777, 1.72289365e-08, 1, 6.74976945e-08, 0.0175066777, -6.77889673e-08, 0.999846756)
+end)
+
+Prisonguns.Name = "Prison guns"
+Prisonguns.Parent = Frame
+Prisonguns.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+Prisonguns.Position = UDim2.new(0.505681813, 0, 0.30864197, 0)
+Prisonguns.Size = UDim2.new(0, 79, 0, 16)
+Prisonguns.Font = Enum.Font.SourceSans
+Prisonguns.Text = "Prison Guns"
+Prisonguns.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prisonguns.TextSize = 14.000
+Prisonguns.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(806.150879, 98.1899872, 2514.6897, 0.02837977, -1.02892661e-09, 0.999597192, -1.27826508e-11, 1, 1.02970421e-09, -0.999597192, -4.20002713e-11, 0.02837977)
+end)
+
+Car.Name = "Car"
+Car.Parent = Frame
+Car.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+Car.Position = UDim2.new(0.505681813, 0, 0.407407403, 0)
+Car.Size = UDim2.new(0, 79, 0, 16)
+Car.Font = Enum.Font.SourceSans
+Car.Text = "Car"
+Car.TextColor3 = Color3.fromRGB(0, 0, 0)
+Car.TextSize = 14.000
+Car.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(923.013916, 99.9899826, 2365.36011, 0.0260279328, -5.13374552e-08, 0.999661207, -9.20808318e-09, 1, 5.15946041e-08, -0.999661207, -1.05478648e-08, 0.0260279328)
+end)
+
+Prison.Name = "Prison"
+Prison.Parent = Frame
+Prison.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+Prison.Position = UDim2.new(0.28125, 0, 0.407407403, 0)
+Prison.Size = UDim2.new(0, 79, 0, 16)
+Prison.Font = Enum.Font.SourceSans
+Prison.Text = "Prison"
+Prison.TextColor3 = Color3.fromRGB(0, 0, 0)
+Prison.TextSize = 14.000
+Prison.MouseButton1Down:connect(function()
+	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(834.817993, 99.9899826, 2280.29346, -0.999849975, -3.88526473e-08, 0.017322477, -3.98948075e-08, 1, -5.98168342e-08, -0.017322477, -6.04989339e-08, -0.999849975)
+end)
+
+TextLabel_4.Parent = Frame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(82, 160, 255)
+TextLabel_4.Position = UDim2.new(-1.08372085e-08, 0, 0.407407403, 0)
+TextLabel_4.Size = UDim2.new(0, 99, 0, 16)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "TP's"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 14.000
